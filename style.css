@@ -1,5 +1,14 @@
+#img1{
+    position: relative;
+}
+#header{
+    position: absolute;
+    font-family: sans-serif;
+    top: 40px;
+    left: 90px;
+}
 body{
     background-color: #0d1117;
     font-family: "consolas", sans-serif;
-    color:rgb(156, 156, 156);
+    color:rgb(255, 255, 255);
 }
