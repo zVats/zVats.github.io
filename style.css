@@ -1,20 +1,29 @@
-#img1{
-    position: relative;
-}
 #header{
-    position: absolute;
-    font-family: sans-serif;
-    top: 40px;
-    left: 90px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
+#header_img{
+    display: inline;
+}
+#header_text{
+    display:inline;
+    font-size:xx-large;
+}
+
 body{
     background-color: #0d1117;
     font-family: sans-serif;
     color:rgb(255, 255, 255);
 }
+#navmenu{
+    display:grid;
+    place-items: center;
+}
 li{
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 ul{
     margin: 0;
@@ -22,7 +31,8 @@ ul{
     list-style-type: none;
 }
 
-#p1{
+#projectDescription{
+    font-size: 20px;
     margin-left: 40px;
     margin-right: 40px;
 }
@@ -46,3 +56,14 @@ a:link {
   a:active {
     text-decoration: underline;
   }
+#article_head_text{
+    display: inline;
+    font-size: x-large;
+    text-decoration: underline;
+}
+#article_head_date{
+    text-align: end;
+}
+#article_p{
+    font-size: 20px;
+}
