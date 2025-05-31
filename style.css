@@ -12,7 +12,7 @@
 }
 
 body{
-    background-color: #0d1117;
+    background-color: rgb(13, 17, 23);
     font-family: sans-serif;
     color:rgb(255, 255, 255);
 }
@@ -66,4 +66,9 @@ a:link {
 }
 #article_p{
     font-size: 20px;
+}
+
+#body_img{
+    display: block;
+    margin: auto;
 }
