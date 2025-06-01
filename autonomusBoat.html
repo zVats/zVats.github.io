@@ -25,8 +25,8 @@
         <div id="navmenu">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="autonomusBoat.html">Autonomus Boat</a></li>
-                <li><a href="autonomusBoatv2.html">Autonomus Boat v2</a></li>
+                <li><a href="autonomusBoat.html">Autonomous Boat</a></li>
+                <li><a href="autonomusBoatv2.html">Autonomous Boat v2</a></li>
             </ul>
         </div>
         <br>
@@ -35,15 +35,13 @@
 
         <!--ProjectHeader begin (the header for the current page)-->
         <h1>
-            Autonomus Boat
+            Autonomous Boat
         </h1>
         <!--ProjectHeader end-->
 
         <!--ProjectDescription begin (short description of the project)-->
         <p id="projectDescription">
-            This is my first autonomus vheicle project! In this project
-            I build an autonomus boat with cheep components to 
-            learn the basics of ardupilot and autonomus navigation.
+            This is my first Autonomous vehicle project! In this project I build an autonomous boat with cheap components to learn the basics of Ardupilot and autonomous navigation. 
         </p>
         <br>
         <!--ProjectDescription end-->
@@ -60,57 +58,64 @@
             </div>
             <p id="article_p">
                  
-                The first steps of the project was to figure out the minimal viable product.
-                What was the bare minimium to make an atuonomus vheicle?
+                The first steps of the project were to figure out the minimal viable product. What was the bare minimum to make an autonomous vehicle? 
+
                 <br> <br>
 
-                The most important thing for a boat is that it floats and does not take in water.
-                I settled with a big plastic food container, because i knew that they had a water tight lid.
-                If the boat where to roll over or loose signal it would not take in water. 
-                The compromise was however that I did not have very great hydrodynamics. But again, minimal viablie product.
+                The most important thing for a boat is that it floats and does not take in water. I settled with a big plastic food container, 
+                because I knew that they had a watertight lid. If the boat were to roll over or loose signal, it would not take in water. 
+                The compromise was however that I did not have very great hydrodynamics. But again, minimal viable product. 
+
                 <br> <br> 
                 <img src="..\Media\foodContainer.jpg">
                 <br> <br>
 
-                Then I also needed a form of propulshun. I choose to have two motors with propellers in the water that could push and stear with diferential trust. 
-                These motors was cheep drone motors from Amazon, ment to fly drones and not boats. Therefore it was not an efficient combination, but they had more than enough power.
-                The motors also came as a kit with speed controllers which saved me some money as well, and also enshured that they were compatible. 
+                Then I also needed a form of propulsion. I choose to have two motors with propellers in the water that could push and steer with differential trust. 
+                These motors where cheap drone motors from Amazon, meant to fly drones and not boats. Therefore, it was not an efficient combination, 
+                but they had more than enough power. The motors also came as a kit with speed controllers which saved me some money as well and also ensured that they were compatible. 
+
                 <br> <br>
                 <img src="..\Media\MotorAndESC.jpg">
                 <img src="..\Media\Motor.jpg">
                 <br> <br>
                 
-                Next problem to takle was to keep the motors dry but the propeller in the water. I found hobby grade propellershafts on Amazon that i could attach to my motors. 
-                Then i could attach the axel sleeve (idk if that's the right term) to the hull with epoxy wich created a waterprof seal. 
-                Then the inside of the axle sleeve were filled with grease to prevent water from penetrating in to the hull. 
+                Next problem to tackle was to keep the motors dry but the propeller in the water. I found hobby grade propeller shafts on Amazon that i could attach to my motors. 
+                Then I could attach the axel sleeve (idk if that's the right term) to the hull with epoxy which created a waterproof seal. .
+                Then the inside of the axle sleeve was filled with grease to prevent water from penetrating into the hull. 
+
                 <br> <br>
                 <img src="..\Media\PropellerAsm.jpg">
                 <br> <br>
 
-                In order to drive my motors i needed batteries. I settled with two 3cell 57,72Wh lipo batteries wich could drive my motors for quite some time. 
-                I also needed a way to controll my motors so i got a radio reciver that had the nessesary connections. And for a transmitter I choose a Raiomaster TX16S 
-                because it has a modular design that can transmit to almost any reciver. 
+                In order to drive my motors, I needed batteries. I settled with two 3cell 57,72Wh lipo batteries which could drive my motors for quite some time. 
+                I also needed a way to control my motors, so I got a radio receiver that had the necessary connections. 
+                And for a transmitter I choose a Raiomaster TX16S because it has a modular design that can transmit to almost any receiver. 
+ 
                 <br> <br>
                 <img src="..\Media\Reciver.jpg"> 
                 <img src="..\Media\RadiomasterTX16S.jpg">
                 <br> <br>
 
-                With the components that I have gatherd at this point I could make a radio controld boat but not a autonomus boat. In order for it to be autonomus the boat needs 
-                to control it self based on feadback about it's sorundings. I needed a controll computer. 
+                In order to drive my motors, I needed batteries. I settled with two 3cell 57,72Wh lipo batteries which could drive my motors for quite some time. 
+                I also needed a way to control my motors, so I got a radio receiver that had the necessary connections. 
+                And for a transmitter I choose a Raiomaster TX16S because it has a modular design that can transmit to almost any receiver. 
+
                 <br> <br>
 
-                This type of comupter is often refered to as a flight computer because they are often used in drones and airplanes, but thay can esely be configured to control a car or a boat. 
-                The main thing that a flight computer has is gyro/accleroometer, gps, compas and telemetry radio. 
-                Several of these systems have reduncency wich is important if you whant your plane or drone to not fall out of the sky. 
-                In my project the stakes are not that high. 
-                If the gyro or gps should fail the boat will still float and I could manualy stear it back to shore. 
-                Althoug my project does not need or use all the feachers and i could maybye have done it with much cheeper electronics.
-                A flight computer is still alot easyer to configure than programming an arduino to do somthing similar. 
-                Because there are already so much software already developed for these controllers it is much easyer to use what aready exixts than to reinvent the wheel. 
-                I also plan to use this flight controller on other projects that will use more feachers so it makes sensce to not have to upgrade down the line. 
+                With the components that I have gathered at this point I could make a radio-controlled boat but not an autonomous boat. 
+                In order for it to be autonomous the boat needs to control itself, based on feedback about its soundings. I needed a control computer. 
+                This type of computer is often referred to as a flight computer because they are often used in drones and airplanes, 
+                but they can easily be configured to control a car or a boat. The main thing that a flight computer has is gyro/accelerometer, GPS, compass and telemetry radio. 
+                Several of these systems have redundancy which is important if you want your plane or drone to not fall out of the sky. In my project the stakes are not that high. 
+                If the gyro or GPS should fail the boat will still float and I could manually steer it back to shore. Although my project does not need or use all the features and 
+                I could maybe have done it with much cheaper electronics. A flight computer is still a lot easier to configure than programming an Arduino to do something similar. 
+                Because there are already so much software already developed for these controllers it is much easier to use what already exists than to reinvent the wheel. 
+                I also plan to use this flight controller on other projects that will use more features, so it makes sense to not have to upgrade down the line. 
+
+
                 <br> <br>
 
-                The flight computer is an Pixhawk 6c mini that is running Ardupilot and the ground software Im using is MissionPlaner. 
+                The flight computer is an Pixhawk 6c mini that is running Ardupilot and the ground software I'm using is MissionPlaner.
                 <br> <br>
                 <img src="..\Media\Pixhawk6cMini.jpg">
             </p>
@@ -128,9 +133,9 @@
                 </div>
             </div>
             <p id="article_p">
-                Before I could make the boat autonomus I needed to make sure I could stear it as a regular RC boat.
+                Before I could make the boat autonomous, I needed to make sure I could steer it as a regular RC boat.
                 I connected one battery to two of the ESC's(electronic speed controller) which where connected to the motors. 
-                In order for the boat to turn I needed the motors to variy in speed when i steard left or right. 
+                In order for the boat to turn I needed the motors to vary in speed when i steered left or right. 
                 With some youtube videos and tinkering I got it to work
                 <br> <br>
                 <video width="854" height="480" controls>
@@ -139,7 +144,7 @@
                 </video>
                 <br> <br>
 
-                However these drone motors where spinning way to fast for my boat, so most of the time I had to run them almost at the lowest speed.
+                However these drone motors where spinning way too fast for my boat, so most of the time I had to run them almost at the lowest speed.
                 After installing the propeller axle on the "boat hull" I needed to test for leeks. 
                 <br> <br>
                 <video width="854" height="480" controls>
@@ -148,7 +153,7 @@
                 </video>
                 <br> <br>
 
-                After I enshured no leaks I set out for the boat's maiden voyage. It was not fast nor streamlined but it worked.
+                After I ensured no leaks I set out for the boat's maiden voyage. It was not fast nor streamlined but it worked.
                 <br> <br>
                 <video width="854" height="480" controls>
                     <source src="\Media\MaidenVoyage.mp4" type="video/mp4">
@@ -156,13 +161,13 @@
                 </video>
                 <br> <br>
 
-                Before I made it autonoums I whanted to improve the hydrodynamics, turning and make the propellers sumburge more.
-                When testing, the boat leaned alot backwards which I whanted to improve. 
-                I put more weight in the front to balance it more.
-                The result was that the boat bored it's way down in to the water. 
-                To fix that problem I made a nose of styrofoam to help the front of the boat come up from the water a bit more. 
-                It helped but the propellers where still to close to the water line, and at higher speeds the propellers would take in air and loose "connection" with the water.
-                At low speeds it worked, so my crusing speed became roufly 1 m/s.
+                Before I made it autonomous, I wanted to improve the hydrodynamics, turning and make the propellers submerge more. 
+                When testing, the boat leaned a lot backwards which I wanted to improve. I put more weight in the front to balance it more. 
+                The result was that the boat bored its way down in to the water. To fix that problem I made a nose of Styrofoam to help the 
+                front of the boat come up from the water a bit more. It helped but the propellers where still too close to the water line, 
+                and at higher speeds the propellers would take in air and loose "connection" with the water. At low speeds it worked, so my 
+                cruising speed became roughly 1 m/s. 
+
                 <br> <br>
                 <img src="..\Media\Nose.jpg">
                 <br> <br>
@@ -181,18 +186,19 @@
                 </div>
             </div>
             <p id="article_p">
-                In order for it to be autonomus i had to connect the brains to the eyes and arms.
-                In this case the brains was the flight computer, eyes the gps and arms the motors. 
-                To continue the analogy you could say that the ears and voice of the boat weare the telemetry radio that constantly comuinicated with my computer.
-                But more techinicaly I needed all of these systems to work together, this was not easy.
-                The ESCs would not comunicate with the flight computer and the gps did not get a good signal. 
-                As it was my first time doing anything like this I felt quite out of my deapth. 
-                The details are not that important but after a lot of time looking at the ardupilot guide and trubleshooting for days, I finaly got it to work.
-                It could drive autonomus and follow waypoints. 
-                But but the summer last year, when I did this, was comming to an end and I felt finished with the project. 
-                Eventhoug my time ran out that time now I whant to come back to the project and to do a v2 of the boat.
-                Everyting worked good exeped the hull design. 
-                So that was my first thing to takle. 
+                In order for it to be autonomous I had to connect the brains to the eyes and arms. 
+                In this case the brains was the flight computer, eyes the GPS and arms the motors. 
+                To continue the analogy, you could say that the ears and voice of the boat was the 
+                telemetry radio that constantly communicated with my computer. But more technically 
+                I needed all of these systems to work together, this was not easy. The ESCs would not 
+                communicate with the flight computer and the GPS did not get a good signal. As it 
+                was my first time doing anything like this, I felt quite out of my depth. The details 
+                are not that important but after a lot of time looking at the Ardupilot guide and 
+                troubleshooting for days, I finally got it to work. It could drive autonomous and 
+                follow waypoints. But the summer last year, when I did this, was coming to an end and 
+                I felt finished with the project. Even though my time ran out that time now I want 
+                to come back to the project and to do a v2 of the boat. Everything worked good except 
+                the hull design. So that was my first thing to tackle. 
             </p>
         </article>
         <!--Article end-->                
