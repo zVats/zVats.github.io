@@ -41,7 +41,8 @@
 
         <!--ProjectDescription begin (short description of the project)-->
         <p id="projectDescription">
-            This is my first Autonomous vehicle project! In this project I build an autonomous boat with cheap components to learn the basics of Ardupilot and autonomous navigation. 
+            This is my first Autonomous vehicle project! In this project I build an autonomous boat with cheap components to 
+            learn the basics of Ardupilot and autonomous navigation. 
         </p>
         <br>
         <!--ProjectDescription end-->
@@ -58,21 +59,21 @@
             </div>
             <p id="article_p">
                  
-                The first steps of the project were to figure out the minimal viable product. What was the bare minimum to make an autonomous vehicle? 
+                The first steps of the project were to figure out the minimal viable product. What is the bare minimum to make an autonomous vehicle? 
 
                 <br> <br>
 
                 The most important thing for a boat is that it floats and does not take in water. I settled with a big plastic food container, 
-                because I knew that they had a watertight lid. If the boat were to roll over or loose signal, it would not take in water. 
+                because I knew that they had a watertight lid. If the boat were to roll over or drift away, it would not take in water. 
                 The compromise was however that I did not have very great hydrodynamics. But again, minimal viable product. 
 
                 <br> <br> 
                 <img src="..\Media\foodContainer.jpg">
                 <br> <br>
 
-                Then I also needed a form of propulsion. I choose to have two motors with propellers in the water that could push and steer with differential trust. 
+                Then I also needed a form of propulsion. I choose to have two motors with propellers that could push and steer with differential trust. 
                 These motors where cheap drone motors from Amazon, meant to fly drones and not boats. Therefore, it was not an efficient combination, 
-                but they had more than enough power. The motors also came as a kit with speed controllers which saved me some money as well and also ensured that they were compatible. 
+                but they had more than enough power. The motors also came as a kit with speed controllers which saved me some money as well and also ensuring that they were compatible. 
 
                 <br> <br>
                 <img src="..\Media\MotorAndESC.jpg">
@@ -92,24 +93,21 @@
                 And for a transmitter I choose a Raiomaster TX16S because it has a modular design that can transmit to almost any receiver. 
  
                 <br> <br>
+                <img src="..\Media\Batteries.jpg"> 
                 <img src="..\Media\Reciver.jpg"> 
                 <img src="..\Media\RadiomasterTX16S.jpg">
                 <br> <br>
 
-                In order to drive my motors, I needed batteries. I settled with two 3cell 57,72Wh lipo batteries which could drive my motors for quite some time. 
-                I also needed a way to control my motors, so I got a radio receiver that had the necessary connections. 
-                And for a transmitter I choose a Raiomaster TX16S because it has a modular design that can transmit to almost any receiver. 
-
-                <br> <br>
-
                 With the components that I have gathered at this point I could make a radio-controlled boat but not an autonomous boat. 
                 In order for it to be autonomous the boat needs to control itself, based on feedback about its soundings. I needed a control computer. 
+
+                <br> <br>
                 This type of computer is often referred to as a flight computer because they are often used in drones and airplanes, 
                 but they can easily be configured to control a car or a boat. The main thing that a flight computer has is gyro/accelerometer, GPS, compass and telemetry radio. 
                 Several of these systems have redundancy which is important if you want your plane or drone to not fall out of the sky. In my project the stakes are not that high. 
-                If the gyro or GPS should fail the boat will still float and I could manually steer it back to shore. Although my project does not need or use all the features and 
-                I could maybe have done it with much cheaper electronics. A flight computer is still a lot easier to configure than programming an Arduino to do something similar. 
-                Because there are already so much software already developed for these controllers it is much easier to use what already exists than to reinvent the wheel. 
+                If the gyro or GPS should fail the boat will still float and I could manually steer it back to shore. My project does not need or use all the features and if
+                I wanted to I could have done it with much cheaper electronics. But a flight computer is still a lot easier to configure than programming an Arduino to do something similar. 
+                And because there are already so much software already developed for these controllers it is much easier to use what already exists than to reinvent the wheel. 
                 I also plan to use this flight controller on other projects that will use more features, so it makes sense to not have to upgrade down the line. 
 
 
@@ -126,7 +124,7 @@
         <article>
             <div id="article_head">
                 <div id="article_head_text">
-                    Assebmely and testing
+                    Assembly and testing
                 </div>
                 <div id="article_head_date">
                     2025/06/01
@@ -153,7 +151,7 @@
                 </video>
                 <br> <br>
 
-                After I ensured no leaks I set out for the boat's maiden voyage. It was not fast nor streamlined but it worked.
+                After I ensured no leaks I set out for the boat's maiden voyage. It was not fast nor streamlined, but it worked.
                 <br> <br>
                 <video width="854" height="480" controls>
                     <source src="\Media\MaidenVoyage.mp4" type="video/mp4">
@@ -179,7 +177,7 @@
         <article>
             <div id="article_head">
                 <div id="article_head_text">
-                    Making it autonomus
+                    Making it autonomous
                 </div>
                 <div id="article_head_date">
                     2025/06/01
